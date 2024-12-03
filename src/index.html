@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icons/youtube-logo-icon.png" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>(683) YouTube - Clone</title>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header
+      class="bg-black flex items-center fixed bottom-11 z-50 justify-between w-full h-[100px] p-4 top-[-25px]"
+    >
+      <!-- Left Section -->
+      <div class="flex items-center space-x-3 ml-[17px]">
+        <div
+          class="flex h-[35px] w-[35px] justify-center items-center hover:bg-whiteTranparent rounded-full transition-all"
+        >
+          <img
+            src="./images/icons/menu-ham.png"
+            class="menu-logo h-[20px] hover:cursor-pointer object-cover object-center"
+          />
+        </div>
+        <div class="flex items-center space-x-3">
+          <img
+            src="./images/icons/YouTube-White-Full-Color-Logo.wine.svg"
+            class="h-[40px] w-[120px] hover:cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="relative flex flex-1 items-center justify-center space-x-2">
+        <div class="relative max-w-[500px] items-center flex-1">
+          <input
+            type="text"
+            placeholder="Search"
+            class="hidden sm:flex h-[40px] w-full rounded-full bg-gray-800 text-white placeholder-gray-500 pl-5 pr-12 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="sm:bg-gray-600 max-sm:absolute max-sm:right-[57px] h-[40px] w-[50px] rounded-r-full flex justify-center items-center absolute right-0 top-0"
+          >
+            <div
+              class="h-[40px] w-[40px] rounded-full flex items-center justify-center max-sm:hover:bg-whiteTranparent hover:transition-all absolute bottom-[20px] sm:bottom-[1px]"
+            >
+              <img
+                src="./images/icons/loupe.png"
+                alt="search"
+                class="h-5 w-5 hover:cursor-pointer"
+              />
+            </div>
+          </button>
+        </div>
+        <button
+          class="max-sm:absolute right-[10px] ml-3 h-[40px] w-[40px] rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-600 transition-all"
+        >
+          <img
+            src="./images/icons/microphone.png"
+            alt="voice-search"
+            class="h-5 w-5 text-gray-500 object-cover object-center"
+          />
+        </button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="flex items-center space-x-3 mr-[17px]">
+        <div
+          class="h-[40px] w-[40px] rounded-full flex items-center justify-center hover:bg-whiteTranparent transition-all"
+        >
+          <a href="#">
+            <img
+              src="./images/icons/video.png"
+              alt="create-icon"
+              class="h-[25px] object-cover object-center"
+            />
+          </a>
+        </div>
+        <div
+          class="h-[40px] w-[40px] rounded-full flex items-center justify-center hover:bg-whiteTranparent transition-all"
+        >
+          <a href="#">
+            <img
+              src="./images/icons/notification.png"
+              alt="notification-icon"
+              class="h-[25px]"
+            />
+          </a>
+        </div>
+        <div class="flex items-center">
+          <a href="#">
+            <img
+              src="./images/vannda.jpg"
+              alt="channel-icon"
+              class="h-[35px] w-[35px] rounded-full object-cover object-center"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Aside Navigation Bars -->
+    <aside class="hidden md:flex flex-col">
+      <div class="w-[100px] h-[120px] mt-[25px] top-[105px] fixed">
+        <ul class="space-y-[30px] flex items-center justify-center flex-col">
+          <!-- Home Icon -->
+          <div class="flex items-center justify-center">
+            <div
+              class="relative object-cover object-center flex items-center justify-center bottom-[12px] h-[85px] w-[80px] hover:bg-whiteTranparent hover:cursor-pointer transition-all rounded-lg"
+            >
+              <div
+                class="absolute flex flex-col justify-center items-center space-y-[10px]"
+              >
+                <img
+                  src="./images/icons/home-icon.png"
+                  alt="home"
+                  class="h-[25px]"
+                />
+                <p class="text-[13px] font-Roboto">Home</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shorts Icon -->
+          <div
+            class="relative object-cover object-center flex items-center justify-center bottom-[12px] h-[85px] w-[80px] hover:bg-whiteTranparent hover:cursor-pointer transition-all rounded-lg"
+          >
+            <div
+              class="absolute flex flex-col justify-center items-center space-y-[10px]"
+            >
+              <img
+                src="./images/icons/youtube-shorts-icon.png"
+                alt="yt-short"
+                class="h-[25px]"
+              />
+              <p class="text-[13px] font-Roboto">Shorts</p>
+            </div>
+          </div>
+
+          <!-- Subscription Icon -->
+          <div
+            class="relative object-cover object-center flex items-center justify-center bottom-[12px] h-[85px] w-[80px] hover:bg-whiteTranparent hover:cursor-pointer transition-all rounded-lg"
+          >
+            <div
+              class="absolute flex flex-col justify-center items-center space-y-[10px]"
+            >
+              <img
+                src="./images/icons/subcription-icon.png"
+                alt="subscription"
+                class="h-[25px]"
+              />
+              <p class="text-[13px] font-Roboto">Subscription</p>
+            </div>
+          </div>
+
+          <!-- Profile Icon -->
+          <div
+            class="relative object-cover object-center flex items-center justify-center bottom-[12px] h-[85px] w-[80px] hover:bg-whiteTranparent hover:cursor-pointer transition-all rounded-lg"
+          >
+            <div
+              class="absolute flex flex-col justify-center items-center space-y-[10px]"
+            >
+              <img
+                src="./images/icons/profile-icon.png"
+                alt="profile"
+                class="h-[25px]"
+              />
+              <p class="text-[13px] font-Roboto">You</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </aside>
+    <!-- End of Aside Navigation Bars-->
+
+    <!-- Video Preview -->
+    <div
+      class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mt-[100px] md:ml-[85px] lg:ml-[85px] sm:ml-[10px] sm:mr-[10px]"
+    >
+      <div class="m-5">
+        <a href="https://www.youtube.com/watch?v=QGhuU1Y5bc8&t=164s">
+          <div class="relative">
+            <img
+              src="./images/mmthum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg object-cover object-center"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:44
+            </p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@MMegamind">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/channelicon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">វាស់កម្តៅ៖ Kung Fu Hustle</p>
+              <span class="font-Roboto text-yt">M.Megamind</span>
+              <p class="font-Roboto text-yt">159K views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=_kS7F4VpJa0">
+            <img
+              src="./images/travis-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:30
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/travis.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Travis Scott, Bad Bunny, The Weeknd - K-POP (Official Music
+                Video)
+              </p>
+              <span class="font-Roboto text-yt">Travis Scott</span>
+              <p class="font-Roboto text-yt">43M views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=kuniEyt3Qks">
+            <img
+              src="./images/vayu-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:24
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@SonyMusicIndia">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img src="./images/vayu.jpg" alt="" class="rounded-full w-[40px]" />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Vayu - Tohfa | Official Music Video | Vaibhav Pani | Manohar Rao
+                | Love Song 2021
+              </p>
+              <span class="font-Roboto text-yt">Sony Music India</span>
+              <p class="font-Roboto text-yt">9.8M views • 3 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=fLexgOxsZu0">
+            <img
+              src="./images/bruno-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg hover:cursor-pointer"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:19
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/brunoIcon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Bruno Mars - The Lazy Song (Official Music Video)
+              </p>
+              <span class="font-Roboto text-yt">Bruno Mars</span>
+              <p class="font-Roboto text-yt">2.8B views • 13 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=WzDmoTydaEk">
+            <img
+              src="./images/thum1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              13:53
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PrimalVideo">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/thum1-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                How To Make YouTube Thumbnails - Quick, Easy & Free!
+              </p>
+              <span class="font-Roboto text-yt">Primal Video</span>
+              <p class="font-Roboto text-yt">78K views • 8 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="">
+            <img
+              src="./images/pew.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              7:43
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I React To My Old Videos... - (Fridays With PewDiePie - Part 80)
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">23M views • 10 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=t9-4eMdBejk">
+            <img
+              src="./images/pew1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:21
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                YouTube's New Update Has A BIG FLAW! 📰PEW NEWS 📰
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">5.7M views • 4 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=ZYsJQmKeZb4">
+            <img
+              src="./images/pew3.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              15:50
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I'll play Minecraft Again... (MAYBE)
+              </p>
+              <span class="font-Roboto text-yt">PewDiePie</span>
+              <p class="font-Roboto text-yt">5,4M views • 4 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <a href="https://www.youtube.com/watch?v=QGhuU1Y5bc8&t=164s">
+          <div class="relative">
+            <img
+              src="./images/mmthum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg object-cover object-center"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:44
+            </p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@MMegamind">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/channelicon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">វាស់កម្តៅ៖ Kung Fu Hustle</p>
+              <span class="font-Roboto text-yt">M.Megamind</span>
+              <p class="font-Roboto text-yt">159K views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=_kS7F4VpJa0">
+            <img
+              src="./images/travis-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:30
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/travis.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Travis Scott, Bad Bunny, The Weeknd - K-POP (Official Music
+                Video)
+              </p>
+              <span class="font-Roboto text-yt">Travis Scott</span>
+              <p class="font-Roboto text-yt">43M views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=kuniEyt3Qks">
+            <img
+              src="./images/vayu-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:24
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@SonyMusicIndia">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img src="./images/vayu.jpg" alt="" class="rounded-full w-[40px]" />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Vayu - Tohfa | Official Music Video | Vaibhav Pani | Manohar Rao
+                | Love Song 2021
+              </p>
+              <span class="font-Roboto text-yt">Sony Music India</span>
+              <p class="font-Roboto text-yt">9.8M views • 3 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=fLexgOxsZu0">
+            <img
+              src="./images/bruno-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg hover:cursor-pointer"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:19
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/brunoIcon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Bruno Mars - The Lazy Song (Official Music Video)
+              </p>
+              <span class="font-Roboto text-yt">Bruno Mars</span>
+              <p class="font-Roboto text-yt">2.8B views • 13 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=WzDmoTydaEk">
+            <img
+              src="./images/thum1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              13:53
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PrimalVideo">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/thum1-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                How To Make YouTube Thumbnails - Quick, Easy & Free!
+              </p>
+              <span class="font-Roboto text-yt">Primal Video</span>
+              <p class="font-Roboto text-yt">78K views • 8 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="">
+            <img
+              src="./images/pew.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              7:43
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I React To My Old Videos... - (Fridays With PewDiePie - Part 80)
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">23M views • 10 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=t9-4eMdBejk">
+            <img
+              src="./images/pew1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:21
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                YouTube's New Update Has A BIG FLAW! 📰PEW NEWS 📰
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">5.7M views • 4 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=ZYsJQmKeZb4">
+            <img
+              src="./images/pew3.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              15:50
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I'll play Minecraft Again... (MAYBE)
+              </p>
+              <span class="font-Roboto text-yt">PewDiePie</span>
+              <p class="font-Roboto text-yt">5,4M views • 4 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <a href="https://www.youtube.com/watch?v=QGhuU1Y5bc8&t=164s">
+          <div class="relative">
+            <img
+              src="./images/mmthum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg object-cover object-center"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:44
+            </p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@MMegamind">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/channelicon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">វាស់កម្តៅ៖ Kung Fu Hustle</p>
+              <span class="font-Roboto text-yt">M.Megamind</span>
+              <p class="font-Roboto text-yt">159K views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=_kS7F4VpJa0">
+            <img
+              src="./images/travis-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:30
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/travis.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Travis Scott, Bad Bunny, The Weeknd - K-POP (Official Music
+                Video)
+              </p>
+              <span class="font-Roboto text-yt">Travis Scott</span>
+              <p class="font-Roboto text-yt">43M views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=kuniEyt3Qks">
+            <img
+              src="./images/vayu-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:24
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@SonyMusicIndia">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img src="./images/vayu.jpg" alt="" class="rounded-full w-[40px]" />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Vayu - Tohfa | Official Music Video | Vaibhav Pani | Manohar Rao
+                | Love Song 2021
+              </p>
+              <span class="font-Roboto text-yt">Sony Music India</span>
+              <p class="font-Roboto text-yt">9.8M views • 3 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=fLexgOxsZu0">
+            <img
+              src="./images/bruno-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg hover:cursor-pointer"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:19
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/brunoIcon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Bruno Mars - The Lazy Song (Official Music Video)
+              </p>
+              <span class="font-Roboto text-yt">Bruno Mars</span>
+              <p class="font-Roboto text-yt">2.8B views • 13 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=WzDmoTydaEk">
+            <img
+              src="./images/thum1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              13:53
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PrimalVideo">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/thum1-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                How To Make YouTube Thumbnails - Quick, Easy & Free!
+              </p>
+              <span class="font-Roboto text-yt">Primal Video</span>
+              <p class="font-Roboto text-yt">78K views • 8 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="">
+            <img
+              src="./images/pew.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              7:43
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I React To My Old Videos... - (Fridays With PewDiePie - Part 80)
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">23M views • 10 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=t9-4eMdBejk">
+            <img
+              src="./images/pew1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:21
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                YouTube's New Update Has A BIG FLAW! 📰PEW NEWS 📰
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">5.7M views • 4 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=ZYsJQmKeZb4">
+            <img
+              src="./images/pew3.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              15:50
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I'll play Minecraft Again... (MAYBE)
+              </p>
+              <span class="font-Roboto text-yt">PewDiePie</span>
+              <p class="font-Roboto text-yt">5,4M views • 4 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <a href="https://www.youtube.com/watch?v=QGhuU1Y5bc8&t=164s">
+          <div class="relative">
+            <img
+              src="./images/mmthum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg object-cover object-center"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:44
+            </p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@MMegamind">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/channelicon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">វាស់កម្តៅ៖ Kung Fu Hustle</p>
+              <span class="font-Roboto text-yt">M.Megamind</span>
+              <p class="font-Roboto text-yt">159K views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=_kS7F4VpJa0">
+            <img
+              src="./images/travis-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:30
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/travis.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Travis Scott, Bad Bunny, The Weeknd - K-POP (Official Music
+                Video)
+              </p>
+              <span class="font-Roboto text-yt">Travis Scott</span>
+              <p class="font-Roboto text-yt">43M views • 1 year ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=kuniEyt3Qks">
+            <img
+              src="./images/vayu-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:24
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@SonyMusicIndia">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img src="./images/vayu.jpg" alt="" class="rounded-full w-[40px]" />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Vayu - Tohfa | Official Music Video | Vaibhav Pani | Manohar Rao
+                | Love Song 2021
+              </p>
+              <span class="font-Roboto text-yt">Sony Music India</span>
+              <p class="font-Roboto text-yt">9.8M views • 3 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=fLexgOxsZu0">
+            <img
+              src="./images/bruno-thum.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg hover:cursor-pointer"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              3:19
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/brunoIcon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                Bruno Mars - The Lazy Song (Official Music Video)
+              </p>
+              <span class="font-Roboto text-yt">Bruno Mars</span>
+              <p class="font-Roboto text-yt">2.8B views • 13 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=WzDmoTydaEk">
+            <img
+              src="./images/thum1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              13:53
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PrimalVideo">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/thum1-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                How To Make YouTube Thumbnails - Quick, Easy & Free!
+              </p>
+              <span class="font-Roboto text-yt">Primal Video</span>
+              <p class="font-Roboto text-yt">78K views • 8 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="">
+            <img
+              src="./images/pew.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              7:43
+            </p>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I React To My Old Videos... - (Fridays With PewDiePie - Part 80)
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">23M views • 10 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=t9-4eMdBejk">
+            <img
+              src="./images/pew1.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              12:21
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                YouTube's New Update Has A BIG FLAW! 📰PEW NEWS 📰
+              </p>
+              <span class="font-Roboto text-yt">PewDiwPie</span>
+              <p class="font-Roboto text-yt">5.7M views • 4 years ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="m-5">
+        <div class="relative">
+          <a href="https://www.youtube.com/watch?v=ZYsJQmKeZb4">
+            <img
+              src="./images/pew3.jpg"
+              alt="thumnail"
+              class="w-full h-auto rounded-lg"
+            />
+            <p
+              class="bg-timeLineBG absolute bottom-[7px] right-[15px] p-[3px] text-center justify-center items-center rounded-[2px] font-Roboto text-[12px]"
+            >
+              15:50
+            </p>
+          </a>
+        </div>
+
+        <a href="https://www.youtube.com/@PewDiePie">
+          <div class="grid grid-cols-[50px_1fr] gap-1 my-3">
+            <img
+              src="./images/pew-icon.jpg"
+              alt=""
+              class="rounded-full w-[40px]"
+            />
+            <div>
+              <p class="font-Roboto font-semibold">
+                I'll play Minecraft Again... (MAYBE)
+              </p>
+              <span class="font-Roboto text-yt">PewDiePie</span>
+              <p class="font-Roboto text-yt">5,4M views • 4 months ago</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
