@@ -918,26 +918,6 @@ video {
     position: absolute;
   }
 
-  .max-sm\:right-\[57px\]{
-    right: 57px;
-  }
-
-  .max-sm\:right-\[20px\]{
-    right: 20px;
-  }
-
-  .max-sm\:right-\[10px\]{
-    right: 10px;
-  }
-
-  .max-sm\:right-\[5px\]{
-    right: 5px;
-  }
-
-  .max-sm\:right-\[2px\]{
-    right: 2px;
-  }
-
   .max-sm\:left-\[10px\]{
     left: 10px;
   }
@@ -946,64 +926,22 @@ video {
     left: 20px;
   }
 
-  .max-sm\:right-0{
-    right: 0px;
-  }
-
-  .max-sm\:right-\[\]{
-    right: ;
-  }
-
-  .max-sm\:right-\[-10px\]{
-    right: -10px;
-  }
-
-  .max-sm\:right-\[px\]{
-    right: px;
-  }
-
   .max-sm\:right-\[-15px\]{
     right: -15px;
   }
 
-  .max-sm\:right-\[3px\]{
-    right: 3px;
+  .max-sm\:right-\[2px\]{
+    right: 2px;
   }
 
-  .max-sm\:right-\[2\]{
-    right: 2;
-  }
-
-  .max-sm\:mr-\[1\]{
-    margin-right: 1;
-  }
-
-  .max-sm\:mr-\[30pc\]{
-    margin-right: 30pc;
-  }
-
-  .max-sm\:mr-\[30px\]{
-    margin-right: 30px;
-  }
-
-  .max-sm\:mr-\[100px\]{
-    margin-right: 100px;
+  .max-sm\:right-\[57px\]{
+    right: 57px;
   }
 
   .max-sm\:space-x-1 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(0.25rem * var(--tw-space-x-reverse));
     margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .max-sm\:bg-red-50{
-    --tw-bg-opacity: 1;
-    background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-  }
-
-  .max-sm\:bg-red-500{
-    --tw-bg-opacity: 1;
-    background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   }
 
   .max-sm\:hover\:bg-whiteTranparent:hover{
