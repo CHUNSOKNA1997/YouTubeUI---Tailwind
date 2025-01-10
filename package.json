@@ -2,7 +2,9 @@
   "name": "youtube",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
